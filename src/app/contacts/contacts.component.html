@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header text-white bg-primary">Contacts Component</div>
+            <div class="card-body">
+                <h3>Contacts</h3>
+                <div class="list-group" *ngIf="contact">
+                    <img [src]="'./assets/contact.png'" width="80" height="80">
+                    <label class="control-label">Name:</label><strong>{{contact.name}}</strong>
+                    <label class="control-label">Email:</label><strong>{{contact.email}}</strong> 
+                    <label class="control-label">Tel:</label><strong>{{contact.tel}}</strong>
+                </div>
+            </div>
+    </div>
+</div>
