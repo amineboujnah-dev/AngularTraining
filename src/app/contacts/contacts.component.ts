@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CalendarOptions } from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 @Component({
   selector: 'app-contacts',
@@ -18,5 +20,9 @@ export class ContactsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth'
+  };
 
 }
